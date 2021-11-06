@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML + CSS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="flex-container">
+        <div class="card">
+            <img src="assets/lombok.jpg" class="featured-image" alt="Image">
+            <div class="container">
+                <h4><b>Lombok</b></h4>
+                <p>Dengan pantai-pantai nan memesona, Gunung Rinjani yang indah, serta pemandangan bawah laut yang spektakuler.</p>
+                <button class="btn info">Share</button>
+                <button class="btn info">Explore</button>
+                <button class="btn chevron" id="myBtn"><i class="fa fa-chevron-down"></i></button>
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close"></span>
+                        <p>Sobat Pesona ingin melakukan sesuatu yang menantang dan memacu adrenalin? Yuk, mendaki gunung berapi dengan trek yang curam. Kalau Sobat Pesona lebih suka sesuatu yang tidak terlalu menantang, coba sewa sepeda lalu berkeliling melintasi hamparan sawah yang hijau. Apapun pilihan Sobat Pesona, Lombok tetap akan menyuguhkan pemandangan alam yang fantastik. </p>
+                        <p>Pulau Lombok dan Bali dipisahkan oleh Selat Lombok di sebelah barat, sedangkan di sebelah timur Pulau Lombok dan Sumbawa dipisahkan oleh Selat Alas.</p>
+                        <P>Suku Sasak merupakan suku yang mendominasi Pulau Lombok. Mereka tinggal di lima wilayah, antara lain Lombok Utara, Lombok Tengah, Lombok Timur, Lombok Barat, dan Kota Mataram yang merupakan ibukota dari Nusa Tenggara Barat. </P>
+                        <p>Lombok Utara adalah tempat di mana Gunung Rinjani berada. Gunung Rinjani adalah salah satu gunung api tertinggi di Indonesia yang ketinggiannya mencapai 3.726 meter di atas permukaan laut. Danau Segara Anak yang berada di Gunung Rinjani, juga menjadi spot yang wajib dikunjungi. Pemandangannya yang disuguhkan sangat menakjubkan deh pokoknya!</p>
+                    </div>                  
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="assets/rajaampat.jpg" class="featured-image" alt="Image">
+            <div class="container">
+                <h4><b>Raja Ampat</b></h4>
+                <button class="btn info">Share</button>
+                <button class="btn info">Explore</button>
+                <button class="btn chevron" id="myBtn"><i class="fa fa-chevron-down"></i></button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="flex-container">
+                <div class="container__photo">
+                    <img src="./assets/8036ca7a3eacc09beb4352cf835bbb9c.jpg" alt="profile image" aria-hidden="true">
+                </div>
+                <div class="container__info">
+                    <h3>Daigo Yamamoto</h3>
+                    <p>Japan</p>
+                </div>
+            </div>
+            <img src="assets/bajo.jpg" class="featured-image" alt="Image">
+            <div class="container">
+                <h4><b>Labuan Bajo</b></h4>
+                <p>Taman Nasional Komodo, deretan pulau eksotis, keragaman hayati bawah laut, hingga pantai aduhai.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="assets/jogja.jpg" class="featured-image" alt="Image">
+            <div class="container">
+                <button class="btn mark"><i class="fa fa-map-marker"></i></button>
+                <button class="btn mark"><i class="fa fa-bookmark"></i></button>
+                <button class="btn mark"><i class="fa fa-heart"></i></button>
+            </div>
+        </div>  
+    </div>
+
+    <script>
+        var modal = document.getElementById("myModal");
+        var btn = document.getElementById("myBtn");
+        var span = document.getElementsByClassName("close")[0];
+        btn.onclick = function() {
+          modal.style.display = "block";
+        }
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+    </script>
+</body>
+</html>
